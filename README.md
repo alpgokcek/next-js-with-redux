@@ -1,5 +1,6 @@
 # next-js-poc
-Next.js 
+basic next.js 9 implementation with redux
+
 ## Available Scripts
 
 In the project directory, you can run:
