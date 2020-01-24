@@ -1,1 +1,1 @@
-{"version":3,"file":"static/css/styles.chunk.css","sources":[],"mappings":";","sourceRoot":""}
+{"version":3,"file":"static/css/styles.chunk.css","sources":["webpack:///./styles/app.scss"],"sourcesContent":[".content {\n  margin-top: 2rem;\n  border: solid;\n  border-radius: 2rem;\n  margin-bottom: 2.5rem;\n  padding: 1rem; }\n  .content__title {\n    width: 70%;\n    font-weight: 700; }\n\nbutton {\n  width: 100%;\n  height: 2rem; }\n"],"mappings":";AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;;","sourceRoot":""}

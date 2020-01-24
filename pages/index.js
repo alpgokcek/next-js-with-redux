@@ -1,16 +1,14 @@
-import react from 'react';
 import '../styles/app.scss';
-import { getPosts, setPosts } from '../store/actions/posts';
-import { bindActionCreators } from 'redux';
+import { getPosts } from '../store/actions/posts';
 import { connect } from 'react-redux';
-import axios from 'axios';
-import { API_URL } from '../constants';
-import fetch from 'isomorphic-fetch';
-import { Link, Router } from '../routes';
+import { Router } from '../routes';
 
 
 class Homepage extends React.Component {
   static async getInitialProps ({ store }) {
+    if (store.getState().posts.posts){
+      return {posts: await store.getState().posts.posts}
+    }
     await store.dispatch(getPosts()).then(async (e) => {
       return {posts: await e};
     });
